@@ -99,3 +99,10 @@ button:hover {
 
 .check-btn { background: #64ffda; color: #f1f7ff; }
 .delete-btn { background: #ff4d4d; color: white; }
+
+
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
