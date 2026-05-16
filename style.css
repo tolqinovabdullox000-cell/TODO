@@ -21,6 +21,7 @@ h2 {
     margin-bottom: 20px;
     color: #64ffda; 
 }
+
 .input-group {
     display: flex;
     gap: 10px;
@@ -59,16 +60,7 @@ button:hover {
 .todo-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
-
-.todo-item {
-    background: #233554;
-    padding: 12px;
-    border-radius: 6px;
-    animation: slideIn 0.3s ease;
-}
-
 
 .todo-item {
     background: #233554;
@@ -80,9 +72,13 @@ button:hover {
     animation: slideIn 0.3s ease;
     cursor: pointer;
     transition: 0.2s;
+    margin-bottom: 12px; 
 }
 
-/* Matn ustidan chizish */
+.todo-item:last-child {
+    margin-bottom: 0; 
+}
+
 .todo-text.completed {
     text-decoration: line-through;
     opacity: 0.5;
@@ -101,10 +97,5 @@ button:hover {
     font-size: 14px;
 }
 
-.check-btn { background: #64ffda; color: #0a192f; }
+.check-btn { background: #64ffda; color: #f1f7ff; }
 .delete-btn { background: #ff4d4d; color: white; }
-
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
